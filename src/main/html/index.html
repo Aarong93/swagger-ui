@@ -84,6 +84,15 @@
           console.log.apply(console, arguments);
         }
       }
+
+      $.getJSON(
+        "http://" + window.location.host + "/users/is_admin",
+        function (response) {
+          if (!response) {
+            window.location = "http://" + window.location.host
+          }
+        }
+      );
   });
   </script>
 </head>
