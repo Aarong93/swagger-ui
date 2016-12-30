@@ -1,7 +1,7 @@
 # Swagger UI
 
 [![Build Status](https://travis-ci.org/swagger-api/swagger-ui.svg?branch=master)](https://travis-ci.org/swagger-api/swagger-ui)
-[![NPM version](https://badge.fury.io/js/swagger-ui.svg)](https://badge.fury.io/js/swagger-ui)
+[![NPM version](https://badge.fury.io/js/swagger-ui.svg)](http://badge.fury.io/js/swagger-ui)
 
 [![Dependency Status](https://david-dm.org/swagger-api/swagger-ui/status.svg)](https://david-dm.org/swagger-api/swagger-ui)
 [![devDependency Status](https://david-dm.org/swagger-api/swagger-ui/dev-status.svg)](https://david-dm.org/swagger-api/swagger-ui#info=devDependencies)
@@ -48,7 +48,7 @@ You can rebuild swagger-ui on your own to tweak it or just so you can say you di
 3. You should see the distribution under the dist folder. Open [`./dist/index.html`](./dist/index.html) to launch Swagger UI in a browser
 
 ### Development
-Use `npm run serve` to make a new build, watch for changes, and serve the result at https://localhost:8080/.
+Use `npm run serve` to make a new build, watch for changes, and serve the result at http://localhost:8080/.
 
 ### Build using Docker
 
@@ -59,10 +59,10 @@ docker build -t swagger-ui-builder .
 docker run -p 80:8080 swagger-ui-builder
 ```
 
-This will start Swagger UI at `https://localhost`.
+This will start Swagger UI at `http://localhost`.
 
 ### Use
-Once you open the Swagger UI, it will load the [Swagger Petstore](https://petstore.swagger.io/v2/swagger.json) service and show its APIs.  You can enter your own server url and click explore to view the API.
+Once you open the Swagger UI, it will load the [Swagger Petstore](http://petstore.swagger.io/v2/swagger.json) service and show its APIs.  You can enter your own server url and click explore to view the API.
 
 ### Customize
 You may choose to customize Swagger UI for your organization. Here is an overview of what's in its various directories:
@@ -72,7 +72,7 @@ You may choose to customize Swagger UI for your organization. Here is an overvie
 -    lib: Contains javascript dependencies which swagger-ui depends on
 -    node_modules: Contains node modules which swagger-ui uses for its development.
 -    src
--    src/main/templates: [handlebars](https://handlebarsjs.com/) templates used to render swagger-ui
+-    src/main/templates: [handlebars](http://handlebarsjs.com/) templates used to render swagger-ui
 -    src/main/html: the html files, some images and css
 -    src/main/javascript: main code
 
@@ -81,7 +81,7 @@ To use swagger-ui you should take a look at the [source of swagger-ui html page]
 
 ```javascript
 var swaggerUi = new SwaggerUi({
-  url: 'https://petstore.swagger.io/v2/swagger.json',
+  url: 'http://petstore.swagger.io/v2/swagger.json',
   dom_id: 'swagger-ui-container'
 });
 
@@ -171,7 +171,7 @@ At this moment only inner html, title-attribute and value-attribute are going to
 
 CORS is a technique to prevent websites from doing bad things with your personal data.  Most browsers + javascript toolkits not only support CORS but enforce it, which has implications for your API server which supports Swagger.
 
-You can read about CORS here: https://www.w3.org/TR/cors.
+You can read about CORS here: http://www.w3.org/TR/cors.
 
 There are two cases where no action is needed for CORS support:
 
@@ -190,7 +190,7 @@ You can verify CORS support with one of three techniques:
 - Curl your API and inspect the headers.  For instance:
 
 ```bash
-$ curl -I "https://petstore.swagger.io/v2/swagger.json"
+$ curl -I "http://petstore.swagger.io/v2/swagger.json"
 HTTP/1.1 200 OK
 Date: Sat, 31 Jan 2015 23:05:44 GMT
 Access-Control-Allow-Origin: *
@@ -205,16 +205,16 @@ This tells us that the petstore resource listing supports OPTIONS, and the follo
 - Try swagger-ui from your file system and look at the debug console.  If CORS is not enabled, you'll see something like this:
 
 ```
-XMLHttpRequest cannot load https://sad.server.com/v2/api-docs. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access.
+XMLHttpRequest cannot load http://sad.server.com/v2/api-docs. No 'Access-Control-Allow-Origin' header is present on the requested resource. Origin 'null' is therefore not allowed access.
 ```
 
 Swagger-UI cannot easily show this error state.
 
-- Using the https://www.test-cors.org website. Keep in mind this will show a successful result even if `Access-Control-Allow-Headers` is not available, which is still required for Swagger-UI to function properly.
+- Using the http://www.test-cors.org website. Keep in mind this will show a successful result even if `Access-Control-Allow-Headers` is not available, which is still required for Swagger-UI to function properly.
 
 ### Enabling CORS
 
-The method of enabling CORS depends on the server and/or framework you use to host your application. https://enable-cors.org provides information on how to enable CORS in some common web servers.
+The method of enabling CORS depends on the server and/or framework you use to host your application. http://enable-cors.org provides information on how to enable CORS in some common web servers.
 
 Other servers/frameworks may provide you information on how to enable it specifically in their use case.
 
@@ -243,7 +243,7 @@ Copyright 2016 SmartBear Software
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
-You may obtain a copy of the License at [apache.org/licenses/LICENSE-2.0](https://www.apache.org/licenses/LICENSE-2.0)
+You may obtain a copy of the License at [apache.org/licenses/LICENSE-2.0](http://www.apache.org/licenses/LICENSE-2.0)
 
 Unless required by applicable law or agreed to in writing, software
 distributed under the License is distributed on an "AS IS" BASIS,
@@ -252,4 +252,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 ---
-<img src="https://swagger.io/wp-content/uploads/2016/02/logo.jpg"/>
+<img src="http://swagger.io/wp-content/uploads/2016/02/logo.jpg"/>

@@ -23,8 +23,8 @@ module.exports.start = function (specsLocation, done) {
   swaggerUI.listen(DOCS_PORT);
   specServer.listen(SPEC_SERVER_PORT);
 
-  var swaggerSpecLocation = encodeURIComponent('https://localhost:' + SPEC_SERVER_PORT + specsLocation);
-  var url = 'https://localhost:' + DOCS_PORT + '/index.html?url=' + swaggerSpecLocation;
+  var swaggerSpecLocation = encodeURIComponent('http://localhost:' + SPEC_SERVER_PORT + specsLocation);
+  var url = 'http://localhost:' + DOCS_PORT + '/index.html?url=' + swaggerSpecLocation;
 
   setTimeout(function(){
     driver.get(url);

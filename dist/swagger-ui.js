@@ -1,7 +1,7 @@
 /**
  * swagger-ui - Swagger UI is a dependency-free collection of HTML, JavaScript, and CSS assets that dynamically generate beautiful documentation from a Swagger-compliant API
  * @version v2.2.8
- * @link https://swagger.io
+ * @link http://swagger.io
  * @license Apache-2.0
  */
 (function(){/* jshint ignore:start */
@@ -778,7 +778,7 @@ templates['status_code'] = template({"1":function(container,depth0,helpers,parti
 $(function() {
 
 	// Helper function for vertically aligning DOM elements
-	// https://www.seodenver.com/simple-vertical-align-plugin-for-jquery/
+	// http://www.seodenver.com/simple-vertical-align-plugin-for-jquery/
 	$.fn.vAlign = function() {
 		return this.each(function(){
 			var ah = $(this).height();
@@ -847,7 +847,7 @@ function log(){
   }
 }
 
-// Handle browsers that do console incorrectly (IE9 and below, see https://stackoverflow.com/a/5539378/7913)
+// Handle browsers that do console incorrectly (IE9 and below, see http://stackoverflow.com/a/5539378/7913)
 if (Function.prototype.bind && console && typeof console.log === "object") {
     [
       "log","info","warn","error","assert","dir","clear","profile","profileEnd"
@@ -1007,9 +1007,9 @@ window.Docs = {
      * Brings an environment as close to ECMAScript 5 compliance
      * as is possible with the facilities of erstwhile engines.
      *
-     * Annotated ES5: https://es5.github.com/ (specific links below)
-     * ES5 Spec: https://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
-     * Required reading: https://javascriptweblog.wordpress.com/2011/12/05/extending-javascript-natives/
+     * Annotated ES5: http://es5.github.com/ (specific links below)
+     * ES5 Spec: http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf
+     * Required reading: http://javascriptweblog.wordpress.com/2011/12/05/extending-javascript-natives/
      */
 
     // Shortcut to an often accessed properties, in order to avoid multiple
@@ -1048,7 +1048,7 @@ window.Docs = {
     var isString; /* inlined from https://npmjs.com/is-string */ var strValue = String.prototype.valueOf, tryStringObject = function tryStringObject(value) { try { strValue.call(value); return true; } catch (e) { return false; } }, stringClass = '[object String]'; isString = function isString(value) { if (typeof value === 'string') { return true; } if (typeof value !== 'object') { return false; } return hasToStringTag ? tryStringObject(value) : to_string.call(value) === stringClass; };
     /* eslint-enable one-var-declaration-per-line, no-redeclare, max-statements-per-line */
 
-    /* inlined from https://npmjs.com/define-properties */
+    /* inlined from http://npmjs.com/define-properties */
     var supportsDescriptors = $Object.defineProperty && (function () {
         try {
             var obj = {};
@@ -1111,8 +1111,8 @@ window.Docs = {
 
     var ES = {
         // ES5 9.4
-        // https://es5.github.com/#x9.4
-        // https://jsperf.com/to-integer
+        // http://es5.github.com/#x9.4
+        // http://jsperf.com/to-integer
         /* replaceable with https://npmjs.com/package/es-abstract ES5.ToInteger */
         ToInteger: function ToInteger(num) {
             var n = +num;
@@ -1148,7 +1148,7 @@ window.Docs = {
         },
 
         // ES5 9.9
-        // https://es5.github.com/#x9.9
+        // http://es5.github.com/#x9.9
         /* replaceable with https://npmjs.com/package/es-abstract ES5.ToObject */
         ToObject: function (o) {
             if (o == null) { // this matches both null and undefined
@@ -1169,7 +1169,7 @@ window.Docs = {
     //
 
     // ES-5 15.3.4.5
-    // https://es5.github.com/#x15.3.4.5
+    // http://es5.github.com/#x15.3.4.5
 
     var Empty = function Empty() {};
 
@@ -1332,7 +1332,7 @@ window.Docs = {
     };
 
     // ES5 15.4.4.12
-    // https://es5.github.com/#x15.4.4.13
+    // http://es5.github.com/#x15.4.4.13
     // Return len+argCount.
     // [bugfix, ielt8]
     // IE < 8 bug: [].unshift(0) === undefined but should be "1"
@@ -1345,7 +1345,7 @@ window.Docs = {
     }, hasUnshiftReturnValueBug);
 
     // ES5 15.4.3.2
-    // https://es5.github.com/#x15.4.3.2
+    // http://es5.github.com/#x15.4.3.2
     // https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/isArray
     defineProperties($Array, { isArray: isArray });
 
@@ -1362,7 +1362,7 @@ window.Docs = {
     // expressions.
 
     // ES5 15.4.4.18
-    // https://es5.github.com/#x15.4.4.18
+    // http://es5.github.com/#x15.4.4.18
     // https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/array/forEach
 
     // Check failure of by-index access of string characters (IE < 9)
@@ -1426,7 +1426,7 @@ window.Docs = {
     }, !properlyBoxesContext(ArrayPrototype.forEach));
 
     // ES5 15.4.4.19
-    // https://es5.github.com/#x15.4.4.19
+    // http://es5.github.com/#x15.4.4.19
     // https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/map
     defineProperties(ArrayPrototype, {
         map: function map(callbackfn/*, thisArg*/) {
@@ -1458,7 +1458,7 @@ window.Docs = {
     }, !properlyBoxesContext(ArrayPrototype.map));
 
     // ES5 15.4.4.20
-    // https://es5.github.com/#x15.4.4.20
+    // http://es5.github.com/#x15.4.4.20
     // https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/filter
     defineProperties(ArrayPrototype, {
         filter: function filter(callbackfn/*, thisArg*/) {
@@ -1490,7 +1490,7 @@ window.Docs = {
     }, !properlyBoxesContext(ArrayPrototype.filter));
 
     // ES5 15.4.4.16
-    // https://es5.github.com/#x15.4.4.16
+    // http://es5.github.com/#x15.4.4.16
     // https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/every
     defineProperties(ArrayPrototype, {
         every: function every(callbackfn/*, thisArg*/) {
@@ -1517,7 +1517,7 @@ window.Docs = {
     }, !properlyBoxesContext(ArrayPrototype.every));
 
     // ES5 15.4.4.17
-    // https://es5.github.com/#x15.4.4.17
+    // http://es5.github.com/#x15.4.4.17
     // https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/some
     defineProperties(ArrayPrototype, {
         some: function some(callbackfn/*, thisArg */) {
@@ -1544,7 +1544,7 @@ window.Docs = {
     }, !properlyBoxesContext(ArrayPrototype.some));
 
     // ES5 15.4.4.21
-    // https://es5.github.com/#x15.4.4.21
+    // http://es5.github.com/#x15.4.4.21
     // https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/reduce
     var reduceCoercesToObject = false;
     if (ArrayPrototype.reduce) {
@@ -1597,7 +1597,7 @@ window.Docs = {
     }, !reduceCoercesToObject);
 
     // ES5 15.4.4.22
-    // https://es5.github.com/#x15.4.4.22
+    // http://es5.github.com/#x15.4.4.22
     // https://developer.mozilla.org/en/Core_JavaScript_1.5_Reference/Objects/Array/reduceRight
     var reduceRightCoercesToObject = false;
     if (ArrayPrototype.reduceRight) {
@@ -1654,7 +1654,7 @@ window.Docs = {
     }, !reduceRightCoercesToObject);
 
     // ES5 15.4.4.14
-    // https://es5.github.com/#x15.4.4.14
+    // http://es5.github.com/#x15.4.4.14
     // https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/indexOf
     var hasFirefox2IndexOfBug = ArrayPrototype.indexOf && [0, 1].indexOf(1, 2) !== -1;
     defineProperties(ArrayPrototype, {
@@ -1683,7 +1683,7 @@ window.Docs = {
     }, hasFirefox2IndexOfBug);
 
     // ES5 15.4.4.15
-    // https://es5.github.com/#x15.4.4.15
+    // http://es5.github.com/#x15.4.4.15
     // https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/lastIndexOf
     var hasFirefox2LastIndexOfBug = ArrayPrototype.lastIndexOf && [0, 1].lastIndexOf(0, -3) !== -1;
     defineProperties(ArrayPrototype, {
@@ -1710,7 +1710,7 @@ window.Docs = {
     }, hasFirefox2LastIndexOfBug);
 
     // ES5 15.4.4.12
-    // https://es5.github.com/#x15.4.4.12
+    // http://es5.github.com/#x15.4.4.12
     var spliceNoopReturnsEmptyArray = (function () {
         var a = [1, 2];
         var result = a.splice();
@@ -1896,7 +1896,7 @@ window.Docs = {
     defineProperties(ArrayPrototype, { push: pushShim }, pushUndefinedIsWeird);
 
     // ES5 15.2.3.14
-    // https://es5.github.io/#x15.4.4.10
+    // http://es5.github.io/#x15.4.4.10
     // Fix boxed string bug
     defineProperties(ArrayPrototype, {
         slice: function (start, end) {
@@ -1947,9 +1947,9 @@ window.Docs = {
     //
 
     // ES5 15.2.3.14
-    // https://es5.github.com/#x15.2.3.14
+    // http://es5.github.com/#x15.2.3.14
 
-    // https://whattheheadsaid.com/2010/10/a-safer-object-keys-compatibility-implementation
+    // http://whattheheadsaid.com/2010/10/a-safer-object-keys-compatibility-implementation
     var hasDontEnumBug = !isEnum({ 'toString': null }, 'toString');
     var hasProtoEnumBug = isEnum(function () {}, 'prototype');
     var hasStringEnumBug = !owns('x', '0');
@@ -2270,7 +2270,7 @@ window.Docs = {
     }
 
     // ES5 15.9.5.43
-    // https://es5.github.com/#x15.9.5.43
+    // http://es5.github.com/#x15.9.5.43
     // This function returns a String value represent the instance in time
     // represented by this Date object. The format of the String is the Date Time
     // string format defined in 15.9.1.15. All fields are present in the String.
@@ -2318,7 +2318,7 @@ window.Docs = {
     }, hasNegativeDateBug || hasSafari51DateBug);
 
     // ES5 15.9.5.44
-    // https://es5.github.com/#x15.9.5.44
+    // http://es5.github.com/#x15.9.5.44
     // This function provides a String representation of a Date object for use by
     // JSON.stringify (15.12.3).
     var dateToJSONIsSupported = (function () {
@@ -2370,9 +2370,9 @@ window.Docs = {
     }
 
     // ES5 15.9.4.2
-    // https://es5.github.com/#x15.9.4.2
+    // http://es5.github.com/#x15.9.4.2
     // based on work shared by Daniel Friesen (dantman)
-    // https://gist.github.com/303249
+    // http://gist.github.com/303249
     var supportsExtendedYears = Date.parse('+033658-09-27T01:46:40.000Z') === 1e15;
     var acceptsInvalidDates = !isNaN(Date.parse('2012-04-04T24:00:00.500Z')) || !isNaN(Date.parse('2012-11-31T23:59:59.000Z')) || !isNaN(Date.parse('2012-12-31T23:59:60.000Z'));
     var doesNotParseY2KNewYear = isNaN(Date.parse('2000-01-01T00:00:00.000Z'));
@@ -2549,7 +2549,7 @@ window.Docs = {
     }
 
     // ES5 15.9.4.4
-    // https://es5.github.com/#x15.9.4.4
+    // http://es5.github.com/#x15.9.4.4
     if (!Date.now) {
         Date.now = function now() {
             return new Date().getTime();
@@ -2562,7 +2562,7 @@ window.Docs = {
     //
 
     // ES5.1 15.7.4.5
-    // https://es5.github.com/#x15.7.4.5
+    // http://es5.github.com/#x15.7.4.5
     var hasToFixedBugs = NumberPrototype.toFixed && (
       (0.00008).toFixed(3) !== '0.000' ||
       (0.9).toFixed(0) !== '1' ||
@@ -2730,12 +2730,12 @@ window.Docs = {
     //
 
     // ES5 15.5.4.14
-    // https://es5.github.com/#x15.5.4.14
+    // http://es5.github.com/#x15.5.4.14
 
     // [bugfix, IE lt 9, firefox 4, Konqueror, Opera, obscure browsers]
     // Many browsers do not split properly with regular expressions or they
     // do not perform the split correctly under obscure conditions.
-    // See https://blog.stevenlevithan.com/archives/cross-browser-split
+    // See http://blog.stevenlevithan.com/archives/cross-browser-split
     // I've tested in many browsers and this seems to cover the deviant ones:
     //    'ab'.split(/(?:ab)*/) should be ["", ""], not [""]
     //    '.'.split(/(.?)(.?)/) should be ["", ".", "", ""], not ["", ""]
@@ -2895,7 +2895,7 @@ window.Docs = {
     }, hasNegativeSubstrBug);
 
     // ES5 15.5.4.20
-    // whitespace from: https://es5.github.io/#x15.5.4.20
+    // whitespace from: http://es5.github.io/#x15.5.4.20
     var ws = '\x09\x0A\x0B\x0C\x0D\x20\xA0\u1680\u180E\u2000\u2001\u2002\u2003' +
         '\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000\u2028' +
         '\u2029\uFEFF';
@@ -2905,8 +2905,8 @@ window.Docs = {
     var trimEndRegexp = new RegExp(wsRegexChars + wsRegexChars + '*$');
     var hasTrimWhitespaceBug = StringPrototype.trim && (ws.trim() || !zeroWidth.trim());
     defineProperties(StringPrototype, {
-        // https://blog.stevenlevithan.com/archives/faster-trim-javascript
-        // https://perfectionkills.com/whitespace-deviations/
+        // http://blog.stevenlevithan.com/archives/faster-trim-javascript
+        // http://perfectionkills.com/whitespace-deviations/
         trim: function trim() {
             if (typeof this === 'undefined' || this === null) {
                 throw new TypeError("can't convert " + this + ' to object');
@@ -3149,7 +3149,7 @@ state.pendingcb++;ret=writeOrBuffer(this,state,chunk,encoding,cb)}return ret};Wr
 /**
  * swagger-client - swagger-client is a javascript client for use with swaggering APIs.
  * @version v2.1.25
- * @link https://swagger.io
+ * @link http://swagger.io
  * @license Apache-2.0
  */
 (function(f){if(typeof exports==="object"&&typeof module!=="undefined"){module.exports=f()}else if(typeof define==="function"&&define.amd){define([],f)}else{var g;if(typeof window!=="undefined"){g=window}else if(typeof global!=="undefined"){g=global}else if(typeof self!=="undefined"){g=self}else{g=this}g.SwaggerClient = f()}})(function(){var define,module,exports;return (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
@@ -3474,7 +3474,7 @@ SwaggerClient.prototype.initialize = function (url, options) {
     this.url = options.url;
   }
 
-  if(this.url && this.url.indexOf('https:') === -1 && this.url.indexOf('https:') === -1) {
+  if(this.url && this.url.indexOf('http:') === -1 && this.url.indexOf('https:') === -1) {
     // no protocol, so we can only use window if it exists
     if(typeof(window) !== 'undefined' && window && window.location) {
       this.url = window.location.origin + this.url;
@@ -4783,7 +4783,7 @@ Resolver.prototype.resolve = function (spec, arg1, arg2, arg3) {
         else {
           parts = a.key.split('#');
           if(parts.length === 2) {
-            if(parts[0].indexOf('https:') === 0 || parts[0].indexOf('https:') === 0) {
+            if(parts[0].indexOf('http:') === 0 || parts[0].indexOf('https:') === 0) {
               a.root = parts[0];
             }
             location = parts[1].split('/');
@@ -5236,7 +5236,7 @@ Resolver.prototype.resolveInline = function (root, spec, property, resolutionTab
         location = rs[1];
       }
     }
-    if (ref.indexOf('https:') === 0 || ref.indexOf('https:') === 0) {
+    if (ref.indexOf('http:') === 0 || ref.indexOf('https:') === 0) {
       if(ref.indexOf('#') >= 0) {
         root = ref.split('#')[0];
         location = ref.split('#')[1];
@@ -5280,7 +5280,7 @@ Resolver.prototype.resolveTo = function (root, property, resolutionTable, locati
       if(parts[0] && ref.indexOf('/') === 0) {
 
       }
-      else if(parts[0] && (parts[0].indexOf('https:') === 0 || parts[0].indexOf('https:') === 0)) {
+      else if(parts[0] && (parts[0].indexOf('http:') === 0 || parts[0].indexOf('https:') === 0)) {
         lroot = parts[0];
         ref = parts[1];
       }
@@ -5299,7 +5299,7 @@ Resolver.prototype.resolveTo = function (root, property, resolutionTable, locati
 
       location = parts[1];
     }
-    else if (ref.indexOf('https:') === 0 || ref.indexOf('https:') === 0) {
+    else if (ref.indexOf('http:') === 0 || ref.indexOf('https:') === 0) {
       lroot = ref;
       location = '';
     }
@@ -6021,8 +6021,8 @@ SwaggerSpecConverter.prototype.declaration = function(obj, swagger) {
     return;
   }
 
-  if (obj.basePath.indexOf('https://') === 0) {
-    p = obj.basePath.substring('https://'.length);
+  if (obj.basePath.indexOf('http://') === 0) {
+    p = obj.basePath.substring('http://'.length);
     pos = p.indexOf('/');
     if (pos > 0) {
       swagger.host = p.substring(0, pos);
@@ -6119,7 +6119,7 @@ SwaggerSpecConverter.prototype.models = function(obj, swagger) {
 
 SwaggerSpecConverter.prototype.extractTag = function(resourcePath) {
   var pathString = resourcePath || 'default';
-  if(pathString.indexOf('https:') === 0 || pathString.indexOf('https:') === 0) {
+  if(pathString.indexOf('http:') === 0 || pathString.indexOf('https:') === 0) {
     pathString = pathString.split(['/']);
     pathString = pathString[pathString.length -1].substring();
   }
@@ -6495,7 +6495,7 @@ SwaggerSpecConverter.prototype.getAbsolutePath = function(version, docLocation, 
   }
 
   var location = docLocation;
-  if(path.indexOf('https:') === 0 || path.indexOf('https:') === 0) {
+  if(path.indexOf('http:') === 0 || path.indexOf('https:') === 0) {
     location = path;
   }
   else {
@@ -7970,7 +7970,7 @@ process.umask = function() { return 0; };
 /*!
  * The buffer module from node.js, for the browser.
  *
- * @author   Feross Aboukhadijeh <feross@feross.org> <https://feross.org>
+ * @author   Feross Aboukhadijeh <feross@feross.org> <http://feross.org>
  * @license  MIT
  */
 
@@ -8664,7 +8664,7 @@ function utf8Slice (buf, start, end) {
   return decodeCodePointsArray(res)
 }
 
-// Based on https://stackoverflow.com/a/22747272/680742, the browser with
+// Based on http://stackoverflow.com/a/22747272/680742, the browser with
 // the lowest limit is Chrome, with 0x10000 args.
 // We go 1 magnitude less, for safety
 var MAX_ARGUMENTS_LENGTH = 0x1000
@@ -10927,7 +10927,7 @@ module.exports.dump     = dump;
 module.exports.safeDump = safeDump;
 
 },{"./common":21,"./exception":23,"./schema/default_full":28,"./schema/default_safe":29}],23:[function(require,module,exports){
-// YAML error class. https://stackoverflow.com/questions/8458984
+// YAML error class. http://stackoverflow.com/questions/8458984
 //
 'use strict';
 
@@ -12327,7 +12327,7 @@ function composeNode(state, parentIndent, nodeContext, allowToSeek, allowCompact
       }
     } else if (indentStatus === 0) {
       // Special case: block sequences are allowed to have same indentation level as the parent.
-      // https://www.yaml.org/spec/1.2/spec.html#id2799784
+      // http://www.yaml.org/spec/1.2/spec.html#id2799784
       hasContent = allowBlockCollections && readBlockSequence(state, blockIndent);
     }
   }
@@ -12745,7 +12745,7 @@ module.exports = Schema;
 
 },{"./common":21,"./exception":23,"./type":32}],27:[function(require,module,exports){
 // Standard YAML's Core schema.
-// https://www.yaml.org/spec/1.2/spec.html#id2804923
+// http://www.yaml.org/spec/1.2/spec.html#id2804923
 //
 // NOTE: JS-YAML does not support schema-specific tag resolution restrictions.
 // So, Core schema has no distinctions from JSON schema is JS-YAML.
@@ -12795,7 +12795,7 @@ module.exports = Schema.DEFAULT = new Schema({
 // It is not described in the YAML specification.
 //
 // This schema is based on standard YAML's Core schema and includes most of
-// extra types described at YAML tag repository. (https://yaml.org/type/)
+// extra types described at YAML tag repository. (http://yaml.org/type/)
 
 
 'use strict';
@@ -12822,7 +12822,7 @@ module.exports = new Schema({
 
 },{"../schema":26,"../type/binary":33,"../type/merge":41,"../type/omap":43,"../type/pairs":44,"../type/set":46,"../type/timestamp":48,"./core":27}],30:[function(require,module,exports){
 // Standard YAML's Failsafe schema.
-// https://www.yaml.org/spec/1.2/spec.html#id2802346
+// http://www.yaml.org/spec/1.2/spec.html#id2802346
 
 
 'use strict';
@@ -12841,7 +12841,7 @@ module.exports = new Schema({
 
 },{"../schema":26,"../type/map":40,"../type/seq":45,"../type/str":47}],31:[function(require,module,exports){
 // Standard YAML's JSON schema.
-// https://www.yaml.org/spec/1.2/spec.html#id2803231
+// http://www.yaml.org/spec/1.2/spec.html#id2803231
 //
 // NOTE: JS-YAML does not support schema-specific tag resolution restrictions.
 // So, this schema is not such strict as defined in the YAML specification.
@@ -13869,7 +13869,7 @@ var nativeMax = Math.max;
 
 /**
  * Gets the index at which the first occurrence of `value` is found in `array`
- * using [`SameValueZero`](https://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
+ * using [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
  * for equality comparisons. If `fromIndex` is negative, it's used as the offset
  * from the end of `array`. If `array` is sorted providing `true` for `fromIndex`
  * performs a faster binary search.
@@ -14177,7 +14177,7 @@ var nativeMax = Math.max;
 
 /**
  * Checks if `target` is in `collection` using
- * [`SameValueZero`](https://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
+ * [`SameValueZero`](http://ecma-international.org/ecma-262/6.0/#sec-samevaluezero)
  * for equality comparisons. If `fromIndex` is negative, it's used as the offset
  * from the end of `collection`.
  *
@@ -14696,7 +14696,7 @@ cloneableTags[weakMapTag] = false;
 var objectProto = Object.prototype;
 
 /**
- * Used to resolve the [`toStringTag`](https://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objToString = objectProto.toString;
@@ -15060,7 +15060,7 @@ var objectProto = Object.prototype;
 var hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
- * Used to resolve the [`toStringTag`](https://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objToString = objectProto.toString;
@@ -15791,7 +15791,7 @@ var baseCreate = require('./baseCreate'),
 function createCtorWrapper(Ctor) {
   return function() {
     // Use a `switch` statement to work with class constructors.
-    // See https://ecma-international.org/ecma-262/6.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
+    // See http://ecma-international.org/ecma-262/6.0/#sec-ecmascript-function-objects-call-thisargument-argumentslist
     // for more details.
     var args = arguments;
     switch (args.length) {
@@ -16593,7 +16593,7 @@ module.exports = isHostObject;
 var reIsUint = /^\d+$/;
 
 /**
- * Used as the [maximum length](https://ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer)
+ * Used as the [maximum length](http://ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer)
  * of an array-like value.
  */
 var MAX_SAFE_INTEGER = 9007199254740991;
@@ -16705,7 +16705,7 @@ module.exports = isLaziable;
 
 },{"../chain/lodash":51,"./LazyWrapper":60,"./getData":110,"./getFuncName":111}],125:[function(require,module,exports){
 /**
- * Used as the [maximum length](https://ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer)
+ * Used as the [maximum length](http://ecma-international.org/ecma-262/6.0/#sec-number.max_safe_integer)
  * of an array-like value.
  */
 var MAX_SAFE_INTEGER = 9007199254740991;
@@ -16713,7 +16713,7 @@ var MAX_SAFE_INTEGER = 9007199254740991;
 /**
  * Checks if `value` is a valid array-like length.
  *
- * **Note:** This function is based on [`ToLength`](https://ecma-international.org/ecma-262/6.0/#sec-tolength).
+ * **Note:** This function is based on [`ToLength`](http://ecma-international.org/ecma-262/6.0/#sec-tolength).
  *
  * @private
  * @param {*} value The value to check.
@@ -17104,7 +17104,7 @@ var baseClone = require('../internal/baseClone'),
  * and invoked with up to three argument; (value [, index|key, object]).
  *
  * **Note:** This method is loosely based on the
- * [structured clone algorithm](https://www.w3.org/TR/html5/infrastructure.html#internal-structured-cloning-algorithm).
+ * [structured clone algorithm](http://www.w3.org/TR/html5/infrastructure.html#internal-structured-cloning-algorithm).
  * The enumerable properties of `arguments` objects and objects created by
  * constructors other than `Object` are cloned to plain `Object` objects. An
  * empty object is returned for uncloneable values such as functions, DOM nodes,
@@ -17198,7 +17198,7 @@ var arrayTag = '[object Array]';
 var objectProto = Object.prototype;
 
 /**
- * Used to resolve the [`toStringTag`](https://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objToString = objectProto.toString;
@@ -17287,7 +17287,7 @@ var funcTag = '[object Function]';
 var objectProto = Object.prototype;
 
 /**
- * Used to resolve the [`toStringTag`](https://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objToString = objectProto.toString;
@@ -17415,7 +17415,7 @@ var objectProto = Object.prototype;
 var hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
- * Used to resolve the [`toStringTag`](https://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objToString = objectProto.toString;
@@ -17490,7 +17490,7 @@ var stringTag = '[object String]';
 var objectProto = Object.prototype;
 
 /**
- * Used to resolve the [`toStringTag`](https://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objToString = objectProto.toString;
@@ -17566,7 +17566,7 @@ typedArrayTags[stringTag] = typedArrayTags[weakMapTag] = false;
 var objectProto = Object.prototype;
 
 /**
- * Used to resolve the [`toStringTag`](https://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objToString = objectProto.toString;
@@ -17630,7 +17630,7 @@ var nativeKeys = getNative(Object, 'keys');
  * Creates an array of the own enumerable property names of `object`.
  *
  * **Note:** Non-object values are coerced to objects. See the
- * [ES spec](https://ecma-international.org/ecma-262/6.0/#sec-object.keys)
+ * [ES spec](http://ecma-international.org/ecma-262/6.0/#sec-object.keys)
  * for more details.
  *
  * @static
@@ -17701,7 +17701,7 @@ var errorProto = Error.prototype,
 var hasOwnProperty = objectProto.hasOwnProperty;
 
 /**
- * Used to resolve the [`toStringTag`](https://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
+ * Used to resolve the [`toStringTag`](http://ecma-international.org/ecma-262/6.0/#sec-object.prototype.tostring)
  * of values.
  */
 var objToString = objectProto.toString;
@@ -18052,11 +18052,11 @@ module.exports = property;
 /*!
  *
  * Copyright 2009-2012 Kris Kowal under the terms of the MIT
- * license found at https://github.com/kriskowal/q/raw/master/LICENSE
+ * license found at http://github.com/kriskowal/q/raw/master/LICENSE
  *
  * With parts by Tyler Close
  * Copyright 2007-2009 Tyler Close under the terms of the MIT X license found
- * at https://www.opensource.org/licenses/mit-license.html
+ * at http://www.opensource.org/licenses/mit-license.html
  * Forked at ref_send.js version: 2009-05-11
  *
  * With parts by Mark Miller
@@ -18066,7 +18066,7 @@ module.exports = property;
  * you may not use this file except in compliance with the License.
  * You may obtain a copy of the License at
  *
- * https://www.apache.org/licenses/LICENSE-2.0
+ * http://www.apache.org/licenses/LICENSE-2.0
  *
  * Unless required by applicable law or agreed to in writing, software
  * distributed under the License is distributed on an "AS IS" BASIS,
@@ -18259,7 +18259,7 @@ var nextTick =(function () {
 
     } else if (typeof MessageChannel !== "undefined") {
         // modern browsers
-        // https://www.nonblocking.io/2011/06/windownexttick.html
+        // http://www.nonblocking.io/2011/06/windownexttick.html
         var channel = new MessageChannel();
         // At least Safari Version 6.0.5 (8536.30.1) intermittently cannot create
         // working message ports the first time a page loads.
@@ -18306,7 +18306,7 @@ var nextTick =(function () {
 // However, this **might** have the nice side-effect of reducing the size of
 // the minified code by reducing x.call() to merely x()
 // See Mark Miller’s explanation of what this does.
-// https://wiki.ecmascript.org/doku.php?id=conventions:safe_meta_programming
+// http://wiki.ecmascript.org/doku.php?id=conventions:safe_meta_programming
 var call = Function.call;
 function uncurryThis(f) {
     return function () {
@@ -18315,7 +18315,7 @@ function uncurryThis(f) {
 }
 // This is equivalent, but slower:
 // uncurryThis = Function_bind.bind(Function_bind.call);
-// https://jsperf.com/uncurrythis
+// http://jsperf.com/uncurrythis
 
 var array_slice = uncurryThis(Array.prototype.slice);
 
@@ -19606,7 +19606,7 @@ Promise.prototype.keys = function () {
  * @returns a promise for an array of the corresponding values
  */
 // By Mark Miller
-// https://wiki.ecmascript.org/doku.php?id=strawman:concurrency&rev=1308776521#allfulfilled
+// http://wiki.ecmascript.org/doku.php?id=strawman:concurrency&rev=1308776521#allfulfilled
 Q.all = all;
 function all(promises) {
     return when(promises, function (promises) {
@@ -20506,7 +20506,7 @@ Response.prototype._parseBody = function(str){
  */
 
 Response.prototype._setStatusProperties = function(status){
-  // handle IE9 bug: https://stackoverflow.com/questions/10046972/msie-returns-status-code-of-1223-for-ajax-request
+  // handle IE9 bug: http://stackoverflow.com/questions/10046972/msie-returns-status-code-of-1223-for-ajax-request
   if (status === 1223) {
     status = 204;
   }
@@ -22598,7 +22598,7 @@ SwaggerUi.Views.HeaderView = Backbone.View.extend({
 
   showPetStore: function(){
     this.trigger('update-swagger-ui', {
-      url:'https://petstore.swagger.io/v2/swagger.json'
+      url:'http://petstore.swagger.io/v2/swagger.json'
     });
   },
 
@@ -23429,7 +23429,7 @@ SwaggerUi.Views.OperationView = Backbone.View.extend({
     parent.showStatus(data);
   },
 
-  // Adapted from https://stackoverflow.com/a/2893259/454004
+  // Adapted from http://stackoverflow.com/a/2893259/454004
   // Note: directly ported from CoffeeScript
   // TODO: Cleanup CoffeeScript artifacts
   formatXml: function(xml) {

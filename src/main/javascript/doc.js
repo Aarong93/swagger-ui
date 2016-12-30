@@ -4,7 +4,7 @@
 $(function() {
 
 	// Helper function for vertically aligning DOM elements
-	// https://www.seodenver.com/simple-vertical-align-plugin-for-jquery/
+	// http://www.seodenver.com/simple-vertical-align-plugin-for-jquery/
 	$.fn.vAlign = function() {
 		return this.each(function(){
 			var ah = $(this).height();
@@ -73,7 +73,7 @@ function log(){
   }
 }
 
-// Handle browsers that do console incorrectly (IE9 and below, see https://stackoverflow.com/a/5539378/7913)
+// Handle browsers that do console incorrectly (IE9 and below, see http://stackoverflow.com/a/5539378/7913)
 if (Function.prototype.bind && console && typeof console.log === "object") {
     [
       "log","info","warn","error","assert","dir","clear","profile","profileEnd"
