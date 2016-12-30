@@ -573,7 +573,7 @@ SwaggerUi.Views.OperationView = Backbone.View.extend({
     parent.showStatus(data);
   },
 
-  // Adapted from http://stackoverflow.com/a/2893259/454004
+  // Adapted from https://stackoverflow.com/a/2893259/454004
   // Note: directly ported from CoffeeScript
   // TODO: Cleanup CoffeeScript artifacts
   formatXml: function(xml) {

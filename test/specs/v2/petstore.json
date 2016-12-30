@@ -1,18 +1,18 @@
 {
   "swagger": "2.0",
   "info": {
-    "description": "This is a sample server Petstore server.  You can find out more about Swagger at <a href=\"http://swagger.io\">http://swagger.io</a> or on irc.freenode.net, #swagger.  For this sample, you can use the api key \"special-key\" to test the authorization filters",
+    "description": "This is a sample server Petstore server.  You can find out more about Swagger at <a href=\"https://swagger.io\">https://swagger.io</a> or on irc.freenode.net, #swagger.  For this sample, you can use the api key \"special-key\" to test the authorization filters",
     "version": "1.0.0",
     "title": "Swagger Petstore",
-    "termsOfService": "http://swagger.io/terms/",
+    "termsOfService": "https://swagger.io/terms/",
     "contact": {
-      "url": "http://swagger.io",
+      "url": "https://swagger.io",
       "name": "Your pals at Swagger",
       "email": "apiteam@swagger.io"
     },
     "license": {
       "name": "Apache 2.0",
-      "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+      "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     }
   },
   "host": "petstore.swagger.io",
@@ -30,7 +30,7 @@
       "description": "Access to Petstore orders",
       "externalDocs": {
         "description": "Find out more",
-        "url": "http://swagger.io"
+        "url": "https://swagger.io"
       }
     },
     {
@@ -38,7 +38,7 @@
       "description": "Everything about your Pets",
       "externalDocs": {
         "description": "Find out more",
-        "url": "http://swagger.io"
+        "url": "https://swagger.io"
       }
     }
   ],
@@ -743,7 +743,7 @@
     },
     "petstore_auth": {
       "type": "oauth2",
-      "authorizationUrl": "http://petstore.swagger.io/api/oauth/dialog",
+      "authorizationUrl": "https://petstore.swagger.io/api/oauth/dialog",
       "flow": "implicit"
     }
   },

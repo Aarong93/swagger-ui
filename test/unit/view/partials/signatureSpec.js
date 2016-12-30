@@ -188,29 +188,29 @@ describe('SwaggerUi.partials.signature tests', function () {
                 expect(sut.createSchemaXML(name, definition, models)).to.equal('<test:tagname>string</test:tagname>');
             });
 
-            it('returns tag <test:tagname >string</test:tagname> when passing type string and xml:{"namespace": "http://swagger.io/schema/sample", "prefix": "sample"}', function () {
+            it('returns tag <test:tagname >string</test:tagname> when passing type string and xml:{"namespace": "https://swagger.io/schema/sample", "prefix": "sample"}', function () {
                 var name = 'name';
                 var definition = {
                     type: 'string',
                     xml: {
-                        namespace: 'http://swagger.io/schema/sample',
+                        namespace: 'https://swagger.io/schema/sample',
                         prefix: 'sample'
                     }
                 };
 
-                expect(sut.createSchemaXML(name, definition, models)).to.equal('<sample:name xmlns:sample="http://swagger.io/schema/sample">string</sample:name>');
+                expect(sut.createSchemaXML(name, definition, models)).to.equal('<sample:name xmlns:sample="https://swagger.io/schema/sample">string</sample:name>');
             });
 
-            it('returns tag <test:tagname >string</test:tagname> when passing type string and xml:{"namespace": "http://swagger.io/schema/sample"}', function () {
+            it('returns tag <test:tagname >string</test:tagname> when passing type string and xml:{"namespace": "https://swagger.io/schema/sample"}', function () {
                 var name = 'name';
                 var definition = {
                     type: 'string',
                     xml: {
-                        namespace: 'http://swagger.io/schema/sample'
+                        namespace: 'https://swagger.io/schema/sample'
                     }
                 };
 
-                expect(sut.createSchemaXML(name, definition, models)).to.equal('<name xmlns="http://swagger.io/schema/sample">string</name>');
+                expect(sut.createSchemaXML(name, definition, models)).to.equal('<name xmlns="https://swagger.io/schema/sample">string</name>');
             });
         });
 

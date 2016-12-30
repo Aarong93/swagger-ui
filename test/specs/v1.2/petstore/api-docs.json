@@ -3,15 +3,15 @@
   "swaggerVersion": "1.2",
   "apis": [
     {
-      "path": "http://localhost:8081/v1.2/petstore/pet.json",
+      "path": "https://localhost:8081/v1.2/petstore/pet.json",
       "description": "Operations about pets"
     },
     {
-      "path": "http://localhost:8081/v1.2/petstore/user.json",
+      "path": "https://localhost:8081/v1.2/petstore/user.json",
       "description": "Operations about user"
     },
     {
-      "path": "http://localhost:8081/v1.2/petstore/store.json",
+      "path": "https://localhost:8081/v1.2/petstore/store.json",
       "description": "Operations about store"
     }
   ],
@@ -31,18 +31,18 @@
       "grantTypes": {
         "implicit": {
           "loginEndpoint": {
-            "url": "http://petstore.swagger.io/oauth/dialog"
+            "url": "https://petstore.swagger.io/oauth/dialog"
           },
           "tokenName": "access_token"
         },
         "authorization_code": {
           "tokenRequestEndpoint": {
-            "url": "http://petstore.swagger.io/oauth/requestToken",
+            "url": "https://petstore.swagger.io/oauth/requestToken",
             "clientIdName": "client_id",
             "clientSecretName": "client_secret"
           },
           "tokenEndpoint": {
-            "url": "http://petstore.swagger.io/oauth/token",
+            "url": "https://petstore.swagger.io/oauth/token",
             "tokenName": "access_code"
           }
         }
@@ -51,10 +51,10 @@
   },
   "info": {
     "title": "Swagger Sample App",
-    "description": "This is a sample server Petstore server.  You can find out more about Swagger \n    at <a href=\"http://swagger.io\">http://swagger.io</a> or on irc.freenode.net, #swagger.  For this sample,\n    you can use the api key \"special-key\" to test the authorization filters",
-    "termsOfServiceUrl": "http://swagger.io/terms/",
+    "description": "This is a sample server Petstore server.  You can find out more about Swagger \n    at <a href=\"https://swagger.io\">https://swagger.io</a> or on irc.freenode.net, #swagger.  For this sample,\n    you can use the api key \"special-key\" to test the authorization filters",
+    "termsOfServiceUrl": "https://swagger.io/terms/",
     "contact": "apiteam@swagger.io",
     "license": "Apache 2.0",
-    "licenseUrl": "http://www.apache.org/licenses/LICENSE-2.0.html"
+    "licenseUrl": "https://www.apache.org/licenses/LICENSE-2.0.html"
   }
 }
